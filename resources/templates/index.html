@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	 <hr/>
+ 	<pre>
+ 	        <div sec:authorize="hasRole('ADMIN')">  	
+ 	        
+ 	        	<a th:href="@{/factures}">All Factures </a> 
+ 	        	<a th:href="@{/find}">find </a></div>   
+ 	        	  <a th:href="@{/encours}">Encours</a>   
+ 	        	   <a th:href="@{/login}">logout</a>
+ 	</pre>
+
+</body>
+</html>

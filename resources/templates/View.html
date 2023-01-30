@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html   xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+        <table border="2">
+        <thead>
+           <tr> 
+           <th>numéro de facture</th>
+           <th>Montant</th>
+           <th>etat</th>
+           <th>Date</th>
+           </tr>
+        </thead>
+         <tbody>
+           <tr th:each="f:${factures}"> 
+           <td th:text="${f.num_fact}"></td>
+           <td th:text="${f.montant}"></td>
+           <td th:text="${f.etat}"></td>
+           <td th:text="${f.date_fact}"></td>
+           </tr>
+        </tbody>
+        
+        </table>
+      
+
+
+	<a th:href="@{/index}">index</a>
+</body>
+</html>

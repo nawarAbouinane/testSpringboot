@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html    xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Fomulaire de recherche d'une facture</title>
+</head>
+<body>
+
+     <form th:action="@{/findfacture}" method="post">
+     <div>
+        <label for ="num_fact">ID facture :</label>
+        <input type="text" id="num_fact" name="num_fact"/>
+     </div>
+     
+        
+        <input type="submit" value="Login">
+     </div>
+     </form>
+
+	<a th:href="@{/index}">index</a>
+
+</body>
+</html>
